@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="signature_processing">
+      <UniqueIdentifier>{402b88da-dba6-42af-8969-ad4b2047c440}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scanner_main">
+      <UniqueIdentifier>{6003b31e-c3cb-48d6-9f79-651604618fa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="filesystem">
+      <UniqueIdentifier>{c68b6a42-e8c1-4402-a95c-715f58d39c8e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="signature.h">
+      <Filter>signature_processing</Filter>
+    </ClInclude>
+    <ClInclude Include="signature_store.h">
+      <Filter>signature_processing</Filter>
+    </ClInclude>
+    <ClInclude Include="scanner.h">
+      <Filter>scanner_main</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>scanner_main</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>scanner_main</Filter>
+    </ClInclude>
+    <ClInclude Include="scanner_mapped_file.h">
+      <Filter>filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="i_scanner.h">
+      <Filter>scanner_main</Filter>
+    </ClInclude>
+    <ClInclude Include="signature_parser.h">
+      <Filter>signature_processing</Filter>
+    </ClInclude>
+    <ClInclude Include="bytes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="signature.cpp">
+      <Filter>signature_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="scanner.cpp">
+      <Filter>scanner_main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>scanner_main</Filter>
+    </ClCompile>
+    <ClCompile Include="signature_parser.cpp">
+      <Filter>signature_processing</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

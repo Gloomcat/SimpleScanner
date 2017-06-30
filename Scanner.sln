@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Scanner", "Scanner\Scanner.vcxproj", "{6281BD64-8A36-4BBA-BF99-C1BE69B1022E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ScannerQt", "ScannerQt\ScannerQt.vcxproj", "{798C00D5-4480-3B17-8431-00DAD936F7C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6281BD64-8A36-4BBA-BF99-C1BE69B1022E}.Debug|x64.ActiveCfg = Debug|Win32
+		{6281BD64-8A36-4BBA-BF99-C1BE69B1022E}.Debug|x64.Build.0 = Debug|Win32
+		{6281BD64-8A36-4BBA-BF99-C1BE69B1022E}.Debug|x86.ActiveCfg = Debug|Win32
+		{6281BD64-8A36-4BBA-BF99-C1BE69B1022E}.Debug|x86.Build.0 = Debug|Win32
+		{6281BD64-8A36-4BBA-BF99-C1BE69B1022E}.Release|x64.ActiveCfg = Release|x64
+		{6281BD64-8A36-4BBA-BF99-C1BE69B1022E}.Release|x64.Build.0 = Release|x64
+		{6281BD64-8A36-4BBA-BF99-C1BE69B1022E}.Release|x86.ActiveCfg = Release|Win32
+		{6281BD64-8A36-4BBA-BF99-C1BE69B1022E}.Release|x86.Build.0 = Release|Win32
+		{798C00D5-4480-3B17-8431-00DAD936F7C4}.Debug|x64.ActiveCfg = Debug|Win32
+		{798C00D5-4480-3B17-8431-00DAD936F7C4}.Debug|x64.Build.0 = Debug|Win32
+		{798C00D5-4480-3B17-8431-00DAD936F7C4}.Debug|x86.ActiveCfg = Debug|Win32
+		{798C00D5-4480-3B17-8431-00DAD936F7C4}.Debug|x86.Build.0 = Debug|Win32
+		{798C00D5-4480-3B17-8431-00DAD936F7C4}.Release|x64.ActiveCfg = Release|Win32
+		{798C00D5-4480-3B17-8431-00DAD936F7C4}.Release|x86.ActiveCfg = Release|Win32
+		{798C00D5-4480-3B17-8431-00DAD936F7C4}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
