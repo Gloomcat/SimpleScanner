@@ -1,5 +1,8 @@
 #pragma once
 
+#ifndef I_SCANNER_H
+#define I_SCANNER_H
+
 #include <string>
 
 class IScanner {
@@ -34,3 +37,5 @@ public:
 
 	virtual ~IScanner() = default;
 };
+
+#endif

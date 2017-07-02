@@ -1,5 +1,8 @@
 #pragma once
 
+#ifndef SCANNER_MAPPED_FILE_H
+#define SCANNER_MAPPED_FILE_H
+
 #include "bytes.h"
 #include <boost/filesystem/path.hpp>
 #include <boost/filesystem/operations.hpp>
@@ -33,4 +36,6 @@ namespace SimpleScanner {
 		boost::interprocess::mapped_region const region;
 	};
 }
+
+#endif
 

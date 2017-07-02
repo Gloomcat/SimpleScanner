@@ -1,5 +1,8 @@
 #pragma once
 
+#ifndef SIGNATURE_H
+#define SIGNATURE_H
+
 #include "bytes.h"
 
 #include <boost/functional/hash.hpp>
@@ -25,3 +28,5 @@ namespace SimpleScanner {
 namespace boost {
 	size_t hash_value(SimpleScanner::Signature const& sig);
 }
+
+#endif

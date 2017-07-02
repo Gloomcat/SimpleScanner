@@ -1,5 +1,8 @@
 #pragma once
 
+#ifndef SIGNATURE_STORE_H
+#define SIGNATURE_STORE_H
+
 #include "signature.h"
 #include "scanner_mapped_file.h"
 
@@ -16,3 +19,5 @@ namespace SimpleScanner {
 	
 	};
 }
+
+#endif

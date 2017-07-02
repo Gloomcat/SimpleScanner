@@ -1,5 +1,8 @@
 #pragma once
 
+#ifndef SCANNER_H
+#define SCANNER_H
+
 #include "signature_store.h"
 
 #include "i_scanner.h"
@@ -45,10 +48,12 @@ namespace SimpleScanner {
 		std::atomic<int> data_counter;
 
 		// For thread safe operations on data_counter
-		std::mutex data_counter_mutex;
+		//std::mutex data_counter_mutex;
 
 		// Signature storage, initialized after successfull call to load_signatures_file
 		signature_store_ptr sig_storage;
 
 	};
 }
+
+#endif

@@ -68,7 +68,7 @@ namespace SimpleScanner {
 						std::move(result_message));
 				}
 				else {
-					std::string result_message = file_path += std::string(" is clean");
+					std::string result_message = file_path;
 					return std::make_pair<Scanner::Results, std::string>(Scanner::Results::SCANNER_OK, std::move(result_message));
 				}
 			} 
@@ -126,17 +126,17 @@ namespace SimpleScanner {
 	}
 
 	int Scanner::get_data_counter() {
-		g_Lock lock(data_counter_mutex);
+		//g_Lock lock(data_counter_mutex);
 		return data_counter;
 	}
 
 	void Scanner::reset_data_counter() {
-		g_Lock lock(data_counter_mutex);
+		//g_Lock lock(data_counter_mutex);
 		data_counter = 0;
 	}
 
 	void Scanner::update_data_counter(int how) {
-		g_Lock lock(data_counter_mutex);
+		//g_Lock lock(data_counter_mutex);
 		data_counter += how;
 	}
 

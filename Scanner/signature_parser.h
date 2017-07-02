@@ -1,5 +1,8 @@
 #pragma once
 
+#ifndef SIGNATURE_PARSER_H
+#define SIGNATURE_PARSER_H
+
 #include "signature_store.h"
 
 #include <boost/spirit/include/qi.hpp>
@@ -50,3 +53,5 @@ namespace SimpleScanner {
 	};
 
 }
+
+#endif

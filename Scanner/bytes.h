@@ -1,5 +1,8 @@
 #pragma once
 
+#ifndef BYTES_H
+#define BYTES_H
+
 #include <boost/range/iterator_range_core.hpp>
 
 namespace SimpleScanner {
@@ -10,3 +13,5 @@ namespace SimpleScanner {
 	typedef std::basic_string<byte> byte_string;
 	typedef boost::iterator_range<byte_const_ptr> byte_iterator_range;
 }
+
+#endif
