@@ -23,7 +23,7 @@ ScannerQt::ScannerQt(QWidget *parent) :
 	try {
 
 		scanner_obj = boost::dll::import<IScanner>(
-			boost::filesystem::path("..\\Debug\\Scanner"), 
+			boost::filesystem::path("..\\Release\\Scanner"), 
 			"SimpleScanner", 
 			boost::dll::load_mode::append_decorations);
 
@@ -42,6 +42,9 @@ ScannerQt::ScannerQt(QWidget *parent) :
 				set_colored_item(QString(res.second.c_str()), Qt::darkRed);
 			else if (res.first == IScanner::Results::SCANNER_WARN) {
 				set_colored_item(QString(res.second.c_str()), Qt::darkYellow);
+			}
+			else {
+				ui->filename->setText(QString(res.second.c_str()));
 			}
 		}));
 
@@ -156,9 +159,10 @@ void ScannerQt::on_stop_scan_clicked() {
 	t_service->reset();
 	killTimer(timer_id);
 	ui->progressBar->setValue(ui->progressBar->minimum());
+	ui->filename->setText(QString(""));
 }
 
-void ScannerQt::timerEvent(QTimerEvent *event) {
+void ScannerQt::timerEvent(QTimerEvent *) {
 	
 	if (ui->progressBar->value() < ui->progressBar->maximum()) {
 		

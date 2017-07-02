@@ -17,18 +17,26 @@ namespace SimpleScanner {
 	{
 	public:
 		static unique_path_store collect_file_paths(input_path_store const& path_store) {
-			assert(!path_store.empty());
 
 			unique_path_store unique_path_store;
 
 			for (auto const& path : path_store) {
 
-				assert(!path.empty());
 				if (!path.empty() && boost::filesystem::exists(path) && !boost::filesystem::is_empty(path)) {
-
+					
+					boost::system::error_code ec;
+					
 					if (boost::filesystem::is_directory(path)) {
 
-						for (boost::filesystem::recursive_directory_iterator rdi(path); rdi != boost::filesystem::recursive_directory_iterator(); ++rdi) {
+						for (boost::filesystem::recursive_directory_iterator rdi(path, ec), rdi_end; 
+							rdi != rdi_end; rdi.increment(ec)) {
+
+							if (ec) {
+
+								if (rdi.level())
+									rdi.pop();
+								continue;
+							}
 
 							auto const& current_path = rdi->path();
 							if (boost::filesystem::is_regular_file(current_path))

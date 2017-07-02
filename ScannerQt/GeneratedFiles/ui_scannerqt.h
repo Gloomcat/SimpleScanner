@@ -31,9 +31,9 @@ class Ui_ScannerQt
 public:
     QWidget *centralWidget;
     QListWidget *listWidget;
-    QLabel *label;
+    QLabel *label_1;
     QProgressBar *progressBar;
-    QLabel *label_2;
+    QLabel *filename;
     QPlainTextEdit *plainTextEdit;
     QLabel *label_3;
     QPushButton *load_sigs;
@@ -53,16 +53,16 @@ public:
         listWidget = new QListWidget(centralWidget);
         listWidget->setObjectName(QStringLiteral("listWidget"));
         listWidget->setGeometry(QRect(0, 180, 801, 361));
-        label = new QLabel(centralWidget);
-        label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(10, 160, 81, 16));
+        label_1 = new QLabel(centralWidget);
+        label_1->setObjectName(QStringLiteral("label_1"));
+        label_1->setGeometry(QRect(10, 160, 81, 16));
         progressBar = new QProgressBar(centralWidget);
         progressBar->setObjectName(QStringLiteral("progressBar"));
         progressBar->setGeometry(QRect(0, 130, 801, 31));
         progressBar->setValue(24);
-        label_2 = new QLabel(centralWidget);
-        label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(10, 110, 81, 16));
+        filename = new QLabel(centralWidget);
+        filename->setObjectName(QStringLiteral("filename"));
+        filename->setGeometry(QRect(10, 110, 801, 16));
         plainTextEdit = new QPlainTextEdit(centralWidget);
         plainTextEdit->setObjectName(QStringLiteral("plainTextEdit"));
         plainTextEdit->setGeometry(QRect(0, 80, 801, 31));
@@ -97,8 +97,7 @@ public:
     void retranslateUi(QMainWindow *ScannerQt)
     {
         ScannerQt->setWindowTitle(QApplication::translate("ScannerQt", "ScannerQt", 0));
-        label->setText(QApplication::translate("ScannerQt", "Results:", 0));
-        label_2->setText(QApplication::translate("ScannerQt", "Progress:", 0));
+        label_1->setText(QApplication::translate("ScannerQt", "Results:", 0));
         label_3->setText(QApplication::translate("ScannerQt", "Enter data sequence:", 0));
         load_sigs->setText(QApplication::translate("ScannerQt", "Load signatures file", 0));
         scan_files->setText(QApplication::translate("ScannerQt", "Scan files", 0));
