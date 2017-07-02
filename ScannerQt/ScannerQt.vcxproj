@@ -144,7 +144,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="GeneratedFiles\Debug\moc_scannerqt.cpp" />
-    <ClCompile Include="GeneratedFiles\Release\moc_scannerqt.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="scannerqt.cpp" />
   </ItemGroup>

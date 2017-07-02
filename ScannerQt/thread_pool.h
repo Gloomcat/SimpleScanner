@@ -71,6 +71,8 @@ namespace SimpleScanner {
 			results_queue.invalidate_queue();
 			task_queue.invalidate_queue();
 
+			//TODO: handle thread locking in some conditions
+
 			active_future_task_results.validate_queue();
 			results_queue.validate_queue();
 			task_queue.validate_queue();
