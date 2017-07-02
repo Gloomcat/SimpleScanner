@@ -69,7 +69,7 @@ namespace SimpleScanner {
 				}
 				else {
 					std::string result_message = file_path;
-					return std::make_pair<Scanner::Results, std::string>(Scanner::Results::SCANNER_OK, std::move(result_message));
+					return std::make_pair<Scanner::Results, std::string>(Scanner::Results::SCANNER_STAT, std::move(result_message));
 				}
 			} 
 			else {

@@ -11,6 +11,7 @@ public:
 	// Results enum
 	enum class Results {
 		SCANNER_OK,
+		SCANNER_STAT,
 		SCANNER_ERROR,
 		SCANNER_WARN,
 		SCANNER_INFECTED
